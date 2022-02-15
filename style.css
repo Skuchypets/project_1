@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100px;
+    align-items: center;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input {
+    display: flex;
+
+}
+
+form {
+    display: flex;
+}
+
+.input-txt {
+    width: 317px;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+}
+
+.input-txt::placeholder {
+    padding: 15px;
+}
+
+.browse-but {
+    width: 87px;
+    height: 38px;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #e6e6e6;
+    background-color: #cdcdcc;
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+}
+
+.search-but {
+    width: 30px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {}
+
+.logo-brand {
+    font-family: "Lato - Light";
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.68px;
+    line-height: normal;
+    width: 93px;
+    height: 19px;
+    color: #222222;
+    font-size: 27px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-align: center;
+    margin-left: 13px;
+    margin-right: 37px;
+}
+
+.brand-d {
+    color: #f16d7f;
+    font-family: "Lato - Black";
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.68px;
+    line-height: normal;
+}
+
+.header-right {
+    display: flex;
+}
+
+.cart-icon {
+    margin-right: 26px;
+    background: none;
+    border: none;
+}
+
+.btn-myacc {
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 15px;
+    border: none;
+}
+.btn-myacc:hover {
+    background-color: #fff;
+    color: #f16d7f;
+    border: 1px solid #f16d7f;
+}
+/* Вызывающая кнопка */
+.btn {
+    background-color: #2196F3;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+/* Контейнер <div> - нужен для позиционирования выпадающего контента */
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+/* Выпадающий контент (по умолчанию скрыт) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего блока */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменяем цвет ссылки при наведении */
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+/* Показываем выпадающий блок при наведении */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Изменяем фоновый цвет вызывающей кнопки при выводе выпадающего блока */
+.btn:hover,
+.dropdown:hover .btn {
+    background-color: #0b7dda;
+}
+
+.item-sec {
+    margin-top: 100px;
+}
+
+.item-box-header {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.featured-h {
+    display: block;
+    color: #222222;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 54px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.75px;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.featured-p {
+    color: #9f9f9f;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 54px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.35px;
+    line-height: normal;
+
+}
+
+.item-box {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: 263px;
+    position: relative;
+    margin-top: 39px;
+
+}
+
+.item:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.item-pic {
+    width: 100%;
+}
+
+.item-link {
+    display: block;
+    text-decoration: none;
+}
+
+.text-box {
+    padding: 20px;
+}
+
+.txt-desc {
+    /* Style for "Mango  Peo" */
+    width: 157px;
+    height: 11px;
+    color: #222222;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "Mango  Peo" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 17px;
+}
+
+.txt-price {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    width: 50px;
+    height: 15px;
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.item:hover .item-pic {
+    filter: brightness(60%);
+}
+
+.cart-box {
+    display: none;
+    position: absolute;
+    top: 98px;
+    justify-content: center;
+    width: 100%;
+}
+
+.cart-link {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    align-items: center;
+}
+
+.add-txt {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.item:hover .cart-box {
+    display: flex;
+}
+
+.icon-insta {
+    display: flex;
+}
+
+.fa-brands {
+    color: green;
+    font-size: 50px;
+}
