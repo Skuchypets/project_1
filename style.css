@@ -3,6 +3,20 @@
     margin: 0;
 }
 
+hr {
+    border: 1px solid #cdcdcc;
+    border-bottom-width: 0
+}
+
+h3 {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -47,12 +61,26 @@ form {
 }
 
 .browse-but {
+    display: block;
     width: 87px;
     height: 38px;
     border-radius: 3px 0 0 3px;
     border: 1px solid #e6e6e6;
     background-color: #cdcdcc;
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+    position: relative;
+}
+
+.drop_down_1 {
+    border: 1px solid #000;
+    background-color: #ccc;
+    width: 300px;
+    height: 300px;
+    display: none;
+}
+
+.browse-but:hover .drop_down_1 {
+    display: block;
 }
 
 .search-but {
@@ -114,58 +142,32 @@ form {
     font-size: 15px;
     border: none;
 }
+
 .btn-myacc:hover {
     background-color: #fff;
     color: #f16d7f;
     border: 1px solid #f16d7f;
 }
-/* Вызывающая кнопка */
-.btn {
-    background-color: #2196F3;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    outline: none;
+
+.mega-menu {
+    height: 51px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Контейнер <div> - нужен для позиционирования выпадающего контента */
-.dropdown {
-    position: absolute;
-    display: inline-block;
-}
-
-/* Выпадающий контент (по умолчанию скрыт) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    z-index: 1;
-}
-
-/* Ссылки внутри выпадающего блока */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+.mega-menu a {
+    padding: 20px;
     text-decoration: none;
-    display: block;
-}
-
-/* Изменяем цвет ссылки при наведении */
-.dropdown-content a:hover {
-    background-color: #ddd
-}
-
-/* Показываем выпадающий блок при наведении */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Изменяем фоновый цвет вызывающей кнопки при выводе выпадающего блока */
-.btn:hover,
-.dropdown:hover .btn {
-    background-color: #0b7dda;
+    text-transform: uppercase;
+    color: #222222;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
 }
 
 .item-sec {
@@ -176,6 +178,7 @@ form {
     justify-content: center;
     width: 100%;
     margin-bottom: 20px;
+
 }
 
 .featured-h {
