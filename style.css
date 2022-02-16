@@ -3,18 +3,8 @@
     margin: 0;
 }
 
-hr {
-    border: 1px solid #cdcdcc;
-    border-bottom-width: 0
-}
-
-h3 {
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 26px;
+.header {
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .container {
@@ -71,20 +61,54 @@ form {
     position: relative;
 }
 
-.drop_down_1 {
-    border: 1px solid #000;
-    background-color: #ccc;
-    width: 300px;
-    height: 300px;
+.mega-box-header {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 20px;
+    top: 34px;
     display: none;
 }
 
-.browse-but:hover .drop_down_1 {
+.browse-but:hover .mega-box-header {
     display: block;
+    justify-content: flex-start;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.mega-box-header:before {
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: -8px;
+    left: 29px;
+    transform: rotate(45deg);
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+}
+
+.mega-link-header {
+    display: block;
+    text-decoration: none;
+    color: #646464;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.mega-link-header:hover {
+    color: #f16d7f;
 }
 
 .search-but {
-    width: 30px;
+    width: 40px;
+    border: 1px solid #e6e6e6;
 }
 
 .logo-link {
@@ -92,8 +116,6 @@ form {
     align-items: center;
     text-decoration: none;
 }
-
-.logo-img {}
 
 .logo-brand {
     font-family: "Lato - Light";
@@ -150,14 +172,35 @@ form {
 }
 
 .mega-menu {
-    height: 51px;
     display: flex;
+    height: 51px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+
 }
 
-.mega-menu a {
+.menu-list {
+    list-style-type: none;
+    position: relative;
+}
+
+.menu-list:hover .mega-box {
+    display: flex;
+    z-index: 1;
+}
+
+.menu-link:hover {
+    color: #f16d7f;
+}
+
+.menu-link {
+    justify-content: center;
+    display: block;
+}
+
+.menu-link {
+    display: block;
     padding: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -165,11 +208,261 @@ form {
     font-family: Lato;
     font-size: 14px;
     font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
     line-height: 26px;
 }
 
+.mega-box {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 20px;
+    top: 48px;
+    display: none;
+}
+
+.mega-box:before {
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: -8px;
+    left: 29px;
+    transform: rotate(45deg);
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+}
+
+.mid:hover .mega-box {
+    left: -300px;
+}
+
+.mid:hover .mega-box:before {
+    left: 325px;
+}
+
+.last:hover .mega-box {
+    right: 0;
+    left: auto;
+}
+
+.last:hover .mega-box:before {
+    right: 43px;
+    left: auto;
+}
+
+.mega-heading {
+    color: #232323;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #e6e6e6;
+    text-transform: uppercase;
+    width: 235px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.h3-mega {
+    margin-top: 18px;
+}
+
+.mega-link {
+    display: block;
+    text-decoration: none;
+    color: #646464;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.mega-link:hover {
+    color: #f16d7f;
+}
+
+.mega-item {
+    margin-right: 45px;
+}
+
+.mega-item:last-of-type {
+    margin-right: 0;
+}
+
+.sale-txt {
+    position: relative;
+    margin-top: 15px;
+}
+
+.mega-sale {
+    position: absolute;
+    top: 60px;
+    left: 170px;
+    color: #ffffff;
+    font-family: "Lato - Black";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+
+/* После HEADERA */
+
+/* SLIDER */
+.slider {
+    position: relative;
+    margin: 0 auto;
+    height: 665px;
+    width: 100%;
+    background-color: #e8e8e8;
+}
+
+.bg-slider {
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: auto;
+}
+
+.slid-pal {
+    position: absolute;
+    top: 270px;
+    left: 180px;
+}
+
+.slid-text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 485px;
+    height: 92px;
+    position: absolute;
+    top: 262px;
+    left: 200px;
+}
+
+.slid_sp0 {
+    font-size: 55px;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: "Lato - Black"
+}
+
+.slid_sp1 {
+    font-size: 35px;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: "Lato - Black"
+}
+
+.slid_sp2 {
+    font-size: 35px;
+    color: #f16d7f;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: "Lato - Black"
+}
+
+/* HOT_GOODS_SECTION
+ */
+.hot-sale {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.hot_man_link {
+    display: block;
+    margin: 10px;
+    position: relative;
+}
+
+.hot_woman_link {
+    display: block;
+    margin: 10px;
+    position: relative;
+}
+
+.hot_acces_link {
+    display: block;
+    margin: 20px 10px 10px 10px;
+    position: relative;
+    width: 560px;
+    height: 261px;
+    background-color: #dadad2;
+}
+
+.hot_kids_link {
+    display: block;
+    margin: 20px 10px 10px 10px;
+    position: relative;
+}
+
+.hot_acces_link img {
+    display: block;
+    align-self: flex-end;
+    position: absolute;
+    left: auto;
+    right: 0;
+}
+
+.hot_man {
+    background-color: #ffffff;
+    position: absolute;
+    top: 25px;
+    align-items: center;
+    padding: 19px 20px 19px 16px;
+}
+
+.hot_acces {
+    background-color: #ffffff;
+    position: absolute;
+    top: 25px;
+    padding: 18px 16px;
+}
+
+.hot_woman {
+    background-color: #ffffff;
+    position: absolute;
+    top: 25px;
+    padding: 18px 16px 19px 16px;
+}
+
+.hot_kids {
+    background-color: #ffffff;
+    position: absolute;
+    top: 25px;
+    padding: 19px 16px 21px 16px;
+}
+.hot_desc {
+    color: #222222;
+    font-family: "Lato - Black";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    text-transform: uppercase;
+}
+.hot_head {
+    color: #f16d7f;
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: 0.75px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+/* Секция ТОвары */
 .item-sec {
     margin-top: 100px;
 }
@@ -244,7 +537,6 @@ form {
 }
 
 .txt-desc {
-    /* Style for "Mango  Peo" */
     width: 157px;
     height: 11px;
     color: #222222;
@@ -256,7 +548,6 @@ form {
     line-height: normal;
     text-align: center;
     text-transform: uppercase;
-    /* Text style for "Mango  Peo" */
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
