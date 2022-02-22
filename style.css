@@ -773,33 +773,74 @@ article {
 }
 
 /* TEST */
+.block {
+    display: flex;
+}
+
 .block-img {
     width: 770px;
     height: 530px;
-    border: 1px solid red;
     position: relative;
-}
-
-.block-text {
-    width: 368px;
-    height: 530px;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-}
-
-..block-text img {
-    width: 40px;
-    height: 40px;
-}
-
-.block {
-    display: flex;
 }
 
 .block-img img {
     position: absolute;
 }
+
+.block-text {
+    width: 375px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222224;
+    justify-content: space-around;
+
+}
+
+.block-text1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 43px;
+}
+
+.block-text2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 43px;
+}
+
+.block-text3 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 43px;
+}
+
+.block-text-text-head h4 {
+    color: #fbfbfb;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 500;
+}
+.block-text-text p {
+    color: #fbfbfb;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 0.35px;
+    margin-top: 18px;
+}
+.block-text-img {
+    max-width: 45px;
+    max-height: 40px;
+}
+.block-text-text {
+    margin-left: 35px;
+}
+
+
 
 
 
@@ -848,6 +889,7 @@ article {
     letter-spacing: normal;
     line-height: normal;
     text-align: left;
+    margin-top: 20px;
 }
 
 .signature {
@@ -1025,15 +1067,19 @@ article {
     align-items: center;
     display: flex;
 }
+
 .social {
     display: flex;
 }
+
 .social a {
     text-decoration: none;
 }
+
 .social a:hover .social_bl {
-    background-color: #f16d7f;   
+    background-color: #f16d7f;
 }
+
 .social a:hover .fa-brands {
     color: #ffffff;
 }
