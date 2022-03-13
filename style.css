@@ -10,6 +10,16 @@ body {
   font-family: sans-serif;
 }
 
+button {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+button:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .header {
   border-bottom: 1px solid #e6e6e6;
 }
@@ -109,6 +119,8 @@ form {
   top: 34px;
   display: none;
   text-align-last: left;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .browse-but:hover .mega-box-header {
@@ -118,6 +130,9 @@ form {
           justify-content: flex-start;
   background-color: #fff;
   z-index: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  opacity: 0.9;
 }
 
 .mega-box-header:before {
